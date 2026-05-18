@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;600&display=swap');
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: white;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.btn-nav{
+    background: #0b3d2e;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.logo {
+  color: green;
+  font-weight: bold;
+}
+.logo-script{
+    font-family:Georgia, 'Times New Roman', Times, serif,cursive;
+    font-size: 30px;
+}
+.logo-serif{
+    font-family: 'cinzel',serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Desktop Menu */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+}
