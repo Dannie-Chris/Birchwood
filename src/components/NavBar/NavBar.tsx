@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./NavBar";
 
-const Navbar: React.FC = () => {
+const NavBar: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -23,4 +23,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
